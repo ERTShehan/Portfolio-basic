@@ -1,0 +1,36 @@
+#contact #contact-main-header {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Inter';
+    font-weight: bold;
+    position: relative;
+    line-height: 1;
+    color: black;
+    margin-bottom: 60px;
+}
+
+#contact #contact-main-header .contact-main-text #header-contact {
+    background: linear-gradient(to bottom, #92DCE9, #33367B);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#contact #contact-main-header .contact-main-text {
+    position: relative;
+    z-index: 2;
+}
+
+#contact #contact-main-header .contact-behind-text {
+    position: absolute;
+    top: 25px;
+    left:50%;
+    z-index: 1;
+    opacity: 0.2;
+    transform: translateX(-20%);
+}
+
+#contact span p {
+    font-size: 21px;
+    font-family: 'Abyssinica SIL';
+}

@@ -1,0 +1,128 @@
+#home {
+  background: linear-gradient(to bottom, #B39DF6, #C5BFD4);
+  width: 100vw;
+  height: 100vh;
+}
+
+#home .hero-title {
+  line-height: 0.8;
+  padding-left: 15px;
+  padding-top: 25px;
+  padding-bottom: 1px;
+  font-family: 'Inter';
+}
+
+#home #my-name {
+  background: linear-gradient(to right, #5888e0, #304a7a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+#home #home-animation #developer {
+  background: linear-gradient(to right, #5888e0, #304a7a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+#home > .hero-title > h2 {
+  font-size: 36px;
+}
+
+#home p{
+  width: 50%;
+  font-family: 'Abyssinica SIL';
+  padding-left: 15px;
+  font-size: 18px;
+}
+
+@keyframes changeText {
+  0% {
+      content: "developer.";
+  }
+  50% {
+      content: "UI/UX designer.";
+  }
+  100% {
+      content: "developer.";
+  }
+}
+
+#developer::after {
+  content: "developer.";
+  animation: changeText 4s ease-in-out infinite;
+}
+#home .img-div{
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50% , -50%);
+}
+#home #profile-photo {
+  height: 20vw;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#section2 {
+  padding: 20px;
+  text-align: center;
+  font-family: 'Suez One';
+  font-size: 24px;
+}
+
+#section2 div #number {
+  color: #D609D2;
+}
+
+#section2 div {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -60px;
+}
+
+#section2 p {
+  height: 12vh;
+  width: 200px;
+  background-color: white;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+#home .hero-title .hello .hello-main-text {
+  font-size: 36px;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+}
+
+#home .hero-title .hello {
+  position: relative;
+  line-height: 1;
+}
+
+#home .hero-title .hello .hello-behind-text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+  font-size: 38px;
+  font-weight: bold;
+  opacity: 0.2;
+}
+
+#home #find-me {
+  position: absolute;
+  top: 500px;
+  padding-left: 15px;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+/* #home #section2 > p:hover {
+  transform: translateX(50px);
+  scale: 1.5;
+} */

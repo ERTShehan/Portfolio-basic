@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tharindu Shehan's personal Portfolio</title>
+    <link rel="stylesheet" href="/styles/header.css" />
+    <link rel="stylesheet" href="/styles/home.css" />
+    <link rel="stylesheet" href="/styles/about.css" />
+    <link rel="stylesheet" href="/styles/education.css" />
+    <link rel="stylesheet" href="/styles/skills.css" />
+    <link rel="stylesheet" href="/styles/project.css" />
+    <link rel="stylesheet" href="/styles/contact.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
     <meta
       name="description"
       content="This is the homepage of the Tharindu Shehan"
@@ -17,6 +25,26 @@
       rel="stylesheet"
     />
     <link
+      href="https://fonts.googleapis.com/css?family=Inter"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Suez One"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kadwa"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -24,13 +52,12 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <!-- <body bgcolor="B39DF6"> -->
   <body>
-    <header>
-      <div>
+    <header class="header">
+      <div id="name">
         <h2 style="font-family: jsmath-cmmi10; margin: 0">ShehaN</h2>
       </div>
-      <nav>
+      <nav class="headernav">
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -45,15 +72,28 @@
     <main>
       <section id="home">
         <br /><br />
-        <h1>Hello!</h1>
-        <h2>I'm Tharindu Shehan</h2>
-        <h2>a developer.<br /></h2>
+        <div class="hero-title">
+          <div class="hello">
+            <div class="hello-main-text">Hello!</div>
+            <div class="hello-behind-text">Hello!</div>
+          </div>
+          <h2>
+            I'm
+            <span id="my-name"> Tharindu Shehan </span>
+          </h2>
 
-        <img
-          src="/assets/images/Profile Photo.webp"
-          alt="Profile photo"
-          style="width: 300px; object-fit: cover"
-        />
+          <h2 id="home-animation">a <span id="developer"></span><br /></h2>
+        </div>
+        <div class="img-div">
+          <img
+            id="profile-photo"
+            src="/assets/images/Profile Photo.webp"
+            alt="Profile photo"
+            style="width: 300px; object-fit: cover"
+          />
+        </div>
+
+        <div class="background-photo"></div>
         <p>
           I’m Tharindu Shehan, a passionate developer, coder, and UI/UX
           designer. With a strong focus on creating seamless and engaging user
@@ -62,11 +102,10 @@
           with technical expertise to bring innovative ideas to life. Let's
           connect and collaborate on your next project!
         </p>
-        <br />
 
         <p>You can find me on below platforms :</p>
         <br />
-        <nav>
+        <nav id="find-me">
           <a
             href="https://www.linkedin.com/in/tharindu-shehan-734366346/"
             target="_blank"
@@ -82,57 +121,109 @@
             ></i
           ></a>
         </nav>
-        <br /><br />
       </section>
 
       <section id="section2">
         <div>
-          <p>20 <br />Awards</p>
-          <p>02 <br />Complete Projects</p>
-          <p>02 <br />Happy Customers</p>
+          <p><span id="number">20</span> <br />Awards</p>
+          <p><span id="number">02</span> <br />Complete Projects</p>
+          <p><span id="number">02</span> <br />Happy Customers</p>
         </div>
       </section>
 
       <section id="about">
-        <header>
-          <h1 align="center">About me</h1>
+        <!-- <div class="line-contner">
+          <div class="line line-1">
+            <div class="ln"></div>
+            <div class="crcl"></div>
+          </div>
+        </div> -->
+        <header id="about-header">
+          <div class="about-main-text">
+            <span id="about-color">About</span> me
+          </div>
+          <div class="about-behind-text">About</div>
         </header>
-        <p>
-          I am an undergraduate student pursuing a degree in Software
-          Engineering. I have a strong foundation in programming with
-          proficiency in Java and MySQL database management. Additionally, I am
-          skilled in web development technologies such as HTML, CSS, and
-          JavaScript, enabling me to build dynamic and responsive websites.
-        </p>
+        <div class="about-paragraph">
+          <p id="about-paragraph1">
+            I am an undergraduate student pursuing a degree in Software
+            Engineering. I have a strong foundation in programming with
+            proficiency in Java and MySQL database management. Additionally, I
+            am skilled in web development technologies such as HTML, CSS, and
+            JavaScript, enabling me to build dynamic and responsive websites.
+          </p>
 
-        <p>
-          I am also experienced with various software tools, including the
-          Microsoft Office suite, Photoshop for graphic design, Figma for UI/UX
-          design, and Audacity for audio editing. With a diverse skill set
-          across both development and creative tools, I am passionate about
-          learning and improving my abilities in the field of software
-          engineering.
-        </p>
+          <p id="about-paragraph2">
+            I am also experienced with various software tools, including the
+            Microsoft Office suite, Photoshop for graphic design, Figma for
+            UI/UX design, and Audacity for audio editing. With a diverse skill
+            set across both development and creative tools, I am passionate
+            about learning and improving my abilities in the field of software
+            engineering.
+          </p>
+        </div>
 
-        <ul>
-          <li><b>Name:</b> Tharindu Shehan</li>
-          <li><b>Date of birth: </b>December 19, 2002</li>
-          <li><b>Address: </b>Akuressa, Matara</li>
-          <li><b>Email: </b>ertsshehan@gmail.com</li>
-          <li><b>Phone: </b>+94 788720585</li>
-        </ul>
+        <div class="point-details">
+          <ul>
+            <div class="details-container">
+              <div class="detail-item">
+                <span class="label">Name:</span>
+                <span class="value">Tharindu Shehan</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Date of birth:</span>
+                <span class="value">December 19, 2002</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Address:</span>
+                <span class="value">Akuressa, Matara</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Email:</span>
+                <span class="value">ertsshehan@gmail.com</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Phone:</span>
+                <span class="value">+94 788720585</span>
+              </div>
+            </div>
+            <!-- <div class="text"><b>Name:</b> Tharindu Shehan</div>
+            <div class="dot"></div>
+            <div class="line"></div>
+            <div class="text"><b>Date of birth: </b>December 19, 2002</div>
+            <div class="dot"></div>
+            <div class="line"></div>
+            <div class="text"><b>Address: </b>Akuressa, Matara</div>
+            <div class="dot"></div>
+            <div class="line"></div>
+            <div class="text"><b>Email: </b>ertsshehan@gmail.com</div>
+            <div class="dot"></div>
+            <div class="line"></div>
+            <div class="text"><b>Phone: </b>+94 788720585</div> -->
+            <!-- <li><b>Name:</b> Tharindu Shehan</li>
+            <li><b>Date of birth: </b>December 19, 2002</li>
+            <li><b>Address: </b>Akuressa, Matara</li>
+            <li><b>Email: </b>ertsshehan@gmail.com</li>
+            <li><b>Phone: </b>+94 788720585</li> -->
+          </ul>
+        </div>
+
         <br /><br />
       </section>
 
       <section id="education">
-        <header>
-          <h1 align="center">Education</h1>
+        <header id="education-header">
+          <div class="education-main-text">Education</div>
+          <div class="education-behind-text">Education</div>
         </header>
 
-        <div>
-          <div>
+        <div class="education-container">
+          <div class="school-study">
             <strong
-              ><p>Studied at St. Thomas’ College. Matara 2014 - 2022</p></strong
+              ><p>
+                Studied at St. Thomas’ College. Matara
+                <span id="year">2014 - 2022</span>
+              </p></strong
             >
             <p>
               I completed my education at St. Thomas' College, Matara, from 2014
@@ -146,10 +237,11 @@
             />
           </div>
 
-          <div>
+          <div class="esoft-study">
             <p>
               <b>
-                Diploma in Information and Communication Technology 2022 - 2023
+                Diploma in Information and Communication Technology
+                <span id="year">2022 - 2023</span>
               </b>
             </p>
             <p>
@@ -164,8 +256,13 @@
             />
           </div>
 
-          <div>
-            <p><b>Graduate Diploma in Software Engineering 2024</b></p>
+          <div class="ijse-study">
+            <p>
+              <b
+                >Graduate Diploma in Software Engineering
+                <span id="year">2024</span></b
+              >
+            </p>
             <p>
               I am currently pursuing my Graduate Diploma in Software
               Engineering at the Institute of Software Engineering (IJSE). As an
@@ -182,29 +279,34 @@
           </div>
         </div>
 
-        <div>
-          <p><strong>What I do</strong></p>
-          <p>
-            As a developer, coder, and UI/UX designer, I craft intuitive designs
-            and build robust applications, blending creativity with technical
-            expertise to deliver seamless user experiences.
-          </p>
-        </div>
-        <br /><br />
+        <div class=".additional-container">
+          <div class="i-do">
+            <p><strong>What I do</strong></p>
+            <p>
+              As a developer, coder, and UI/UX designer, I craft intuitive
+              designs and build robust applications, blending creativity with
+              technical expertise to deliver seamless user experiences.
+            </p>
+          </div>
+          <br /><br />
 
-        <div>
-          <p><strong>Experience</strong></p>
-          <p>
-            As a developer, coder, and UI/UX designer, I create seamless user
-            experiences through intuitive designs and robust applications. Let’s
-            collaborate on your next project!
-          </p>
+          <div class="experience">
+            <p><strong>Experience</strong></p>
+            <p>
+              As a developer, coder, and UI/UX designer, I create seamless user
+              experiences through intuitive designs and robust applications.
+              Let’s collaborate on your next project!
+            </p>
+          </div>
         </div>
       </section>
 
       <section id="skills">
-        <header>
-          <h1 align="center">Professional Skills</h1>
+        <header id="skills-main-header">
+          <div class="skills-main-text">
+            <span id="header-professional">Professional</span> Skills
+          </div>
+          <div class="skills-behind-text">Skills</div>
         </header>
         <div>
           <p>Java 90 %</p>
@@ -225,59 +327,69 @@
       </section>
 
       <section id="project">
-        <header>
-          <h1>My Projects</h1>
-          <br />
-        </header>
+        <div class="project-buildmaster">
+          <header id="project-main-header">
+            <div class="main-text"><span id="header-my">My</span> Project</div>
+            <div class="behind-text">Project</div>
+            <br />
+          </header>
 
-        <h3><p align="center">Construction company management System</p></h3>
-        <p>
-          The Construction Company Management System is a standalone software
-          solution designed to streamline the management of construction
-          projects, resources, and expenses. The system features a user-friendly
-          dashboard that provides quick access to critical data, including
-          project details, client management, employee information, supplier
-          tracking, and financial summaries.
-        </p>
+          <h3><p>Construction company management System</p></h3>
+          <div class="grid-container-buildmaster">
+            <p class="buildmaster-paragraph">
+              The Construction Company Management System is a standalone
+              software solution designed to streamline the management of
+              construction projects, resources, and expenses. The system
+              features a user-friendly dashboard that provides quick access to
+              critical data, including project details, client management,
+              employee information, supplier tracking, and financial summaries.
+            </p>
 
-        <img
-          src="/assets/images/BuildmasterLoginpage.png"
-          alt="BuidMaster Login Page"
-          style="width: 400px; height: 250px"
-        />
+            <img
+              src="/assets/images/BuildmasterLoginpage.png"
+              alt="BuidMaster Login Page"
+              style="width: 400px; height: 250px"
+            />
 
-        <img
-          src="/assets/images/BuildmasterDashboard.png"
-          alt="BuidMaster Login Page"
-          style="width: 400px; height: 250px"
-        />
-        <br /><br />
-        <br />
+            <img
+              src="/assets/images/BuildmasterDashboard.png"
+              alt="BuidMaster Login Page"
+              style="width: 400px; height: 250px"
+            />
+            <br /><br />
+            <br />
 
-        <img
-          src="/assets/images/BuildmasterExpenses.png"
-          alt="BuidMaster Login Page"
-          style="width: 400px; height: 250px"
-        />
-        <br /><br /><br />
+            <img
+              src="/assets/images/BuildmasterExpenses.png"
+              alt="BuidMaster Login Page"
+              style="width: 400px; height: 250px"
+            />
+            <br /><br /><br />
+          </div>
+        </div>
 
-        <img
-          src="/assets/images/ProjectPhoto1.png "
-          alt="BuidMaster Login Page"
-          style="width: 400px; height: 250px"
-        />
+        <div class="project-photo">
+          <img
+            src="/assets/images/ProjectPhoto1.png "
+            alt="BuidMaster Login Page"
+            style="width: 400px; height: 250px"
+          />
 
-        <img
-          src="/assets/images/ProjectPhoto2.jpg"
-          alt="BuidMaster Login Page"
-          style="width: 400px; height: 250px"
-        />
+          <img
+            src="/assets/images/ProjectPhoto2.jpg"
+            alt="BuidMaster Login Page"
+            style="width: 400px; height: 250px"
+          />
+        </div>
         <br /><br /><br />
       </section>
 
       <section id="contact">
-        <header>
-          <h1 align="center">Contact Me</h1>
+        <header id="contact-main-header">
+          <div class="contact-main-text">
+            <span id="header-contact">Contact</span> Me
+          </div>
+          <div class="contact-behind-text">Contact</div>
         </header>
 
         <span style="text-align: center"

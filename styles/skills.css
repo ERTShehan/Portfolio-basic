@@ -1,0 +1,28 @@
+#skills #skills-main-header {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Inter';
+    font-weight: bold;
+    position: relative;
+}
+
+#skills #skills-main-header .skills-main-text #header-professional{
+    background: linear-gradient(to bottom, #92DCE9, #33367B);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#skills #skills-main-header .skills-main-text {
+    position: relative;
+    z-index: 2;
+}
+
+#skills #skills-main-header .skills-behind-text {
+    position: absolute;
+    top: 25px;
+    left:55%;
+    z-index: 1;
+    opacity: 0.2;
+    transform: translateX(-20%);
+}

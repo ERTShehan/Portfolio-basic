@@ -1,0 +1,85 @@
+#project .project-buildmaster{
+    width: 1100px;
+    height: 70vh;
+    height: 55vw;
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    margin-left: 85px;
+}
+
+#project .project-buildmaster #project-main-header {
+    position: relative;
+    font-size: 50px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+}
+
+#project .project-buildmaster #project-main-header .main-text #header-my {
+    background: linear-gradient(to bottom, #92DCE9, #33367B);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.main-text {
+    position: relative;
+    z-index: 2;
+}
+
+.behind-text {
+    position: absolute;
+    top: 22px;
+    left: 485px;
+    font-size: 60px;
+    z-index: 1;
+    opacity: 0.3;
+    color: gray;
+}
+
+#project .project-buildmaster h3 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.grid-container-buildmaster {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+
+.buildmaster-paragraph {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.grid-container-buildmaster img:nth-of-type(1) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.grid-container-buildmaster img:nth-of-type(2) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.grid-container-buildmaster img:nth-of-type(3) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.grid-container-buildmaster img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    max-height: 250px;
+}
+
+#project .project-photo img {
+    margin-top: 50px;
+    gap: 40px;
+    justify-content: space-around;
+}

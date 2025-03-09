@@ -1,0 +1,84 @@
+#education {
+    background-color: #FFFFFF;
+    padding: 40px;
+}
+
+#education #education-header {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Inter';
+    font-weight: bold;
+    position: relative;
+    line-height: 1;
+    color: black;
+    /* margin-top: 5px; */
+    /* top: 40px; */
+}
+
+#education #education-header .education-main-text {
+    position: relative;
+    z-index: 2;
+}
+
+#education #education-header .education-behind-text {
+    position: absolute;
+    top: 25px;
+    left:47%;
+    z-index: 1;
+    opacity: 0.2;
+    transform: translateX(-20%);
+}
+
+#education .school-study {
+    background: linear-gradient(to bottom, #B39DF6, #D4E3FA);
+    border-radius: 10px;
+    height: 80vh;
+    width: 25vw;
+}
+
+#education .esoft-study {
+    background-color: #D1E2E9;
+    border-radius: 10px;
+    height: 80vh;
+    width: 25vw;
+}
+
+#education .ijse-study {
+    background: linear-gradient(to bottom, #B39DF6, #D4E3FA);
+    border-radius: 10px;
+    height: 80vh;
+    width: 25vw;
+}
+
+#education .education-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 45px;
+    justify-content: space-around;
+}
+
+#education .education-container #year {
+    top: 50px;
+    right: 50px;
+    /* padding-top: 40px; */
+    padding-left: 10px;
+    color: red;
+}
+
+#education .i-do, .experience {
+    background: #D1E2E9;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+#education .additional-container {
+    /* display: flex;
+    flex-direction: row; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin: 0 100px;
+}
