@@ -54,7 +54,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
-    padding: 45px;
+    padding: 40px;
     justify-content: space-around;
 }
 
@@ -63,7 +63,7 @@
     right: 50px;
     /* padding-top: 40px; */
     padding-left: 10px;
-    color: red;
+    color:grey;
 }
 
 #education .i-do, .experience {
@@ -81,4 +81,58 @@
     gap: 20px;
     padding: 20px;
     margin: 0 100px;
+}
+
+#education .school-study {
+    padding: 15px;
+}
+
+#education .esoft-study {
+    padding: 15px;
+}
+
+#education .ijse-study {
+    padding: 15px;
+}
+
+#education .school-study img {
+    /* size: 50px; */
+    padding-left: 20px;
+    padding-top: 130px;
+}
+
+#education .esoft-study img {
+    padding-left: 20px;
+    padding-top: 100px;
+}
+
+#education .school-study:hover {
+    /* transform:translateX(5px); */
+    transform: translateZ(5px);
+    scale: 1.05;
+    transition: transform 0.2s ease-in-out, scale 0.2s ease-in-out;
+}
+
+#education .esoft-study:hover {
+    transform: translateZ(5px);
+    scale: 1.05;
+    transition: transform 0.2s ease-in-out, scale 0.2s ease-in-out;
+}
+
+#education .ijse-study:hover {
+    transform: translateZ(5px);
+    scale: 1.05;
+    transition: transform 0.2s ease-in-out, scale 0.2s ease-in-out;
+}
+
+#education .i-do:hover {
+    transform: translateZ(3px);
+    scale: 1.02;
+    transition: transform 0.2s ease-in-out, scale 0.2s ease-in-out;
+}
+
+#education .experience:hover {
+    transform: translateZ(3px);
+    scale: 1.02;
+    transition: transform 0.2s ease-in-out, scale 0.2s ease-in-out;
 }

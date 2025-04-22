@@ -1,7 +1,7 @@
 #footer{
     margin: 0;
     padding: 0;
-    width: 100vw;
+    /* width: 100vw; */
     height: 50vh;
     background-color: #454040;
     padding: 30px;
@@ -53,16 +53,25 @@
     margin-right: 40px;
 }
 
-
-
-
 #footer .container-2 div{
     margin-top: 20px;
     margin-right: 100px;
 }
 
+#footer .container-2 div img{
+    filter: invert(1);
+    padding-right: 1px;
+}
 
 #footer .container-2 div p{
     margin-bottom: 7px;
     color: rgb(182, 182, 182);
+}
+
+#footer #copyright {
+    color: white;
+}
+
+#footer .container-2 div p img {
+    color: white;
 }

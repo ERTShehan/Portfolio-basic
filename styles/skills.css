@@ -4,6 +4,7 @@
     font-family: 'Inter';
     font-weight: bold;
     position: relative;
+    padding-top: 30px;
 }
 
 #skills #skills-main-header .skills-main-text #header-professional{
@@ -20,9 +21,108 @@
 
 #skills #skills-main-header .skills-behind-text {
     position: absolute;
-    top: 25px;
+    top: 55px;
     left:55%;
     z-index: 1;
     opacity: 0.2;
     transform: translateX(-20%);
 }
+
+#skills .skills-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: auto;
+    gap: 20px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+  
+#skills .skill {
+  width: 48%;
+  margin-bottom: 15px;
+}
+  
+#skills .skill label {
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+  
+#skills .progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 5px;
+  position: relative;
+}
+  
+#skills .progress-bar::before {
+  content: '';
+  display: block;
+  height: 100%;
+  background-color: #4a64e8;
+  border-radius: 5px;
+  position: absolute;
+}
+  
+#java::before { width: 75%; }
+#javascript::before { width: 60%; }
+#mysql::before { width: 80%; }
+#html::before { width: 60%; }
+#microsoft-office::before { width: 95%; }
+#css::before { width: 70%; }
+  
+#skills .skill span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+#skills .image-container {
+  /* width: 100vw; */
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0;
+}
+
+.image-container img {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  opacity: 0; 
+  animation: moveImage 12s linear infinite;
+}
+
+.image-container img:nth-child(1) { animation-delay: 0s; }
+.image-container img:nth-child(2) { animation-delay: 1s; }
+.image-container img:nth-child(3) { animation-delay: 2s; }
+.image-container img:nth-child(4) { animation-delay: 3s; }
+.image-container img:nth-child(5) { animation-delay: 4s; }
+.image-container img:nth-child(6) { animation-delay: 5s; }
+.image-container img:nth-child(7) { animation-delay: 6s; }
+
+
+@keyframes moveImage {
+  0% {
+    transform: translateX(100vw);
+    opacity: 1;
+  }
+  
+  50% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(-100vw);
+    opacity: 0;
+  }
+}  

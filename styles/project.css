@@ -1,4 +1,6 @@
 #project .project-buildmaster{
+    justify-content: center;
+    align-items: center;
     width: 1100px;
     height: 70vh;
     height: 55vw;
@@ -78,8 +80,27 @@
     max-height: 250px;
 }
 
-#project .project-photo img {
+#project .grid-container-buildmaster img,
+.project-photo img {
+    transition: transform 0.2s ease-in-out, scale 0.2s ease-in-out;
+}
+
+.grid-container-buildmaster img:hover,
+.project-photo img:hover {
+    transform: translateZ(5px);
+    scale: 1.05;
+}
+
+#project .project-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
     margin-top: 50px;
-    gap: 40px;
-    justify-content: space-around;
+}
+
+#project .project-photo img {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
 }
